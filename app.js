@@ -51,10 +51,11 @@ onAuthStateChanged(auth, user => {
   }
 });
 const firebaseConfig = {
-  apiKey: "...",
-  authDomain: "...",
-  projectId: "...",
-  storageBucket: "...",
-  messagingSenderId: "...",
-  appId: "..."
+  apiKey: "AIzaSyDQRwBi6V-Grem0UOW891dMkdSgVu5TGlQ",
+  authDomain: "lyt-83564.firebaseapp.com",
+  projectId: "lyt-83564",
+  storageBucket: "lyt-83564.firebasestorage.app",
+  messagingSenderId: "304917981069",
+  appId: "1:304917981069:web:3f25a390d245e922dd7fc4",
+  measurementId: "G-4T1MTZBJFK"
 };
