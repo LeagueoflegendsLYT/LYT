@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LYT Arena</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===== Login Modal ===== -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <h2>Iniciar sesión</h2>
+    <input type="email" id="email" placeholder="Correo">
+    <input type="password" id="password" placeholder="Contraseña">
+    <button onclick="login()">Entrar</button>
+    <p id="loginError"></p>
+  </div>
+</div>
+
+<!-- ===== Header ===== -->
+<header>
+    <h1 id="logoText">LYT</h1>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#torneos">Torneos</a>
+        <a href="#ligas">Ligas</a>
+        <a href="#ranking">Ranking LYT</a>
+        <a href="#puntos">Mis Puntos LYT</a>
+        <a href="#mejores">Mejores Jugadas</a>
+        <a href="#faq">FAQs</a>
+        <a href="#contacto">Contáctanos</a>
+        <a href="#" id="btnLogout" onclick="logout()" style="display:none;">Salir</a>
+        <a href="#" onclick="showLogin()" id="btnLogin">Login</a>
+    </nav>
+</header>
+
+<!-- ===== Secciones ===== -->
+<section id="inicio"><h2>Bienvenido a LYT Arena</h2></section>
+<section id="torneos"><h2>Torneos</h2><div id="adminTorneoBtns"></div></section>
+<section id="ligas"><h2>Ligas</h2><div id="adminLigaBtns"></div></section>
+<section id="ranking"><h2>Ranking LYT</h2></section>
+<section id="puntos"><h2>Mis Puntos LYT</h2><div id="adminPacks"></div></section>
+<section id="mejores"><h2>Mejores Jugadas</h2></section>
+<section id="faq"><h2>Preguntas Frecuentes</h2></section>
+<section id="contacto"><h2>Contáctanos</h2></section>
+
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
